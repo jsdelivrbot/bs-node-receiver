@@ -6,7 +6,7 @@ var upload = multer({ dest: 'uploads/' })
 
 var app = express()
 
-app.listen(1357, function() {	
+app.listen(80, function() {	
 	console.log('Listening at port 1357');
 });
 
