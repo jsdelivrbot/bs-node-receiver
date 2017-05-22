@@ -1,5 +1,6 @@
 var express = require('express')
 var multer  = require('multer')
+var path - require('path');
 
 var upload = multer({ dest: 'uploads/' })
 
@@ -10,7 +11,7 @@ app.listen(1357, function() {
 });
 
 app.get('/funda/bsuploadclient', function(req, res){
-	res.sendFile('./testsubmission.htm');
+	res.sendFile('testsubmission.htm', {root: path.join(__dirname, './')});
 });
 
 app.post('/funda/bsuploadserver', upload.any(), function (req, res, next) {
