@@ -5,6 +5,7 @@
   "main": "MultiPartFormRestServer.js",
   "dependencies": {
     "express": "^4.15.3",
+    "jsforce": "^1.8.0",
     "multer": "^1.3.0",
     "nodemon": "^1.11.0"
   },
