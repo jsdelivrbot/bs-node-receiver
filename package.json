@@ -18,6 +18,9 @@
   ],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "6.10.3"
+  },
   "scripts": {
   "start": "node MultiPartFormRestServer.js"
 }

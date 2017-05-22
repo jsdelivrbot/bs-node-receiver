@@ -1,12 +1,14 @@
-var express = require('express')
-var multer  = require('multer')
+var express = require('express');
+var multer  = require('multer');
 var path = require('path');
 
-var upload = multer({ dest: 'uploads/' })
+var upload = multer({ dest: 'uploads/' });
 
-var app = express()
+var app = express();
 
-app.listen(80, function() {	
+app.set('port', (process.env.PORT) || 5000);
+
+app.listen(app.get('port'), function() {	
 	console.log('Listening at port 1357');
 });
 
