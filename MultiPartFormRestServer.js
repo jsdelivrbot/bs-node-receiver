@@ -22,7 +22,7 @@ app.post('/funda/bsuploadserver', upload.any(), function (req, res, next) {
 	// req.body will contain the text fields, if there were any
 	console.log(req.body);
 
-	files.forEach( function(file, index){  	
+	req.files.forEach( function(file, index){  	
 	    console.log("file " + index);  
 	});
 
