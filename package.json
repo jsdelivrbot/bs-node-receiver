@@ -17,5 +17,8 @@
     "Rest"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+  "start": "node MultiPartFormRestServer.js"
+}
 }
