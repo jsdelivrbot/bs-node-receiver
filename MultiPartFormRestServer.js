@@ -10,7 +10,7 @@ app.listen(1357, function() {
 });
 
 app.get('/funda/bsuploadclient', function(req, res){
-	res.send('testsubmission.htm');
+	res.sendFile('testsubmission.htm');
 });
 
 app.post('/funda/bsuploadserver', upload.any(), function (req, res, next) {
