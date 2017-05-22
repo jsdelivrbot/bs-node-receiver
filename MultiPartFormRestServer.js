@@ -17,9 +17,15 @@ app.get('/funda/bsuploadclient', function(req, res){
 });
 
 app.post('/funda/bsuploadserver', upload.any(), function (req, res, next) {
-  // req.files is array of `photos` files
-  console.log(req.files);
-  // req.body will contain the text fields, if there were any
-  console.log(req.body);
-  res.send('matcha cupcake');
-})
+	// req.files is array of `photos` files
+	console.log(req.files);
+	// req.body will contain the text fields, if there were any
+	console.log(req.body);
+
+	files.forEach( function(file, index){  	
+	    console.log("file " + index);  
+	});
+
+	res.send('matcha cupcake');
+
+});
