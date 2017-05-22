@@ -9,7 +9,7 @@ var app = express();
 app.set('port', (process.env.PORT) || 5000);
 
 app.listen(app.get('port'), function() {	
-	console.log('Listening at port 1357');
+	console.log('Listening at port ' + app.get('port'));
 });
 
 app.get('/funda/bsuploadclient', function(req, res){
