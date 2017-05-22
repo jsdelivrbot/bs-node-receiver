@@ -1,6 +1,6 @@
 var express = require('express')
 var multer  = require('multer')
-var path - require('path');
+var path = require('path');
 
 var upload = multer({ dest: 'uploads/' })
 
